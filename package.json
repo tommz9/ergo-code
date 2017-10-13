@@ -2,7 +2,7 @@
     "name": "ergo-code",
     "displayName": "Ergo Code",
     "description": "Ergoemacs inspired keymap",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "tommz9",
     "author": {
         "name": "Tomas Barton",
@@ -30,9 +30,19 @@
                 "when": "editorTextFocus"
             },
             {
+                "key": "alt-i",
+                "command": "selectPrevSuggestion",
+                "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+            },
+            {
                 "key": "alt-k",
                 "command": "cursorDown",
                 "when": "editorTextFocus"
+            },
+            {
+                "key": "alt-k",
+                "command": "selectNextSuggestion",
+                "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
             },
             {
                 "key": "alt+l",

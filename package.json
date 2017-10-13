@@ -1,0 +1,108 @@
+{
+    "name": "ergo-code",
+    "displayName": "Ergo Code",
+    "description": "Ergoemacs inspired keymap",
+    "version": "0.1.0",
+    "publisher": "tommz9",
+    "author": {
+        "name": "Tomas Barton",
+        "email": "tommz9@gmail.com",
+        "url": "www.tomasbarton.net"
+    },
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "icon": "icon.png",
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "alt-j",
+                "command": "cursorLeft",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "alt-i",
+                "command": "cursorUp",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "alt-k",
+                "command": "cursorDown",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "alt+l",
+                "command": "cursorRight",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "alt+o",
+                "command": "cursorWordEndRight",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "alt+u",
+                "command": "cursorWordStartLeft",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "shift-alt-j",
+                "command": "cursorLeftSelect",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "shift-alt-i",
+                "command": "cursorUpSelect",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "shift-alt-k",
+                "command": "cursorDownSelect",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "shift-alt+l",
+                "command": "cursorRightSelect",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "shift-alt+o",
+                "command": "cursorWordEndRightSelect",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "shift-alt+u",
+                "command": "cursorWordStartLeftSelect",
+                "when": "editorTextFocus"
+            },
+            {
+                "key": "alt-e",
+                "command": "deleteWordLeft",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "alt-r",
+                "command": "deleteWordRight",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "alt-d",
+                "command": "deleteLeft",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "alt-f",
+                "command": "deleteRight",
+                "when": "editorTextFocus && !editorReadonly"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tommz9/ergo-code.git"
+    }
+}
